@@ -3,26 +3,26 @@ import Image from "next/image";
 import SiteNavigation from "./site-navigation";
 
 export const metadata: Metadata = {
-	title: "Gururaj Rathod | AWS DevOps Engineer",
-	description: "Gururaj Rathod builds scalable cloud platforms on AWS with Kubernetes, EKS, Terraform, CI/CD, and platform engineering.",
+	title: "Suman Kemmannakeri | AWS DevOps Engineer",
+	description:  "AWS DevOps Engineer with experience in AWS, Kubernetes, Terraform, Azure DevOps, CI/CD automation, cloud infrastructure and production support.",
 };
 
 const skillGroups = [
 	{
 		category: "Cloud",
-		skills: ["AWS", "EC2", "IAM", "VPC", "ALB", "Route53", "KMS", "CloudWatch", "WAF"],
+		skills: ["AWS","EKS","EC2","IAM","S3","Route53","ACM","CloudWatch","Secrets Manager","RDS"],
 	},
 	{
 		category: "Containers",
-		skills: ["Kubernetes", "Amazon EKS", "Helm", "Karpenter", "NGINX", "IRSA", "OIDC"],
+		skills: ["Kubernetes", "Amazon EKS", "Helm", "NGINX", "IRSA", "OIDC"],
 	},
 	{
 		category: "Infrastructure as Code",
-		skills: ["Terraform", "Terragrunt"],
+		skills: ["Terraform", "Terragrunt", "Ansible"],
 	},
 	{
 		category: "CI/CD",
-		skills: ["Azure DevOps", "Azure Pipelines", "Jenkins", "GitHub Actions", "Git"],
+		skills: ["Azure DevOps", "Azure Pipelines", "Jenkins", "Azure Repos", "Git"],
 	},
 	{
 		category: "Observability",
@@ -30,7 +30,7 @@ const skillGroups = [
 	},
 	{
 		category: "Operating Systems",
-		skills: ["Linux", "Bash"],
+		skills: ["Linux", "Bash", "Windows"],
 	},
 	{
 		category: "Security & DevSecOps",
@@ -42,12 +42,18 @@ const experiences = [
 	{
 		company: "Capgemini Technology Services India Ltd.",
 		role: "AWS DevOps Engineer",
-		period: "Feb 2026 - Present",
+		period: "Feb 2025 - Present",
 		client: "HP Inc.",
 		highlights: [
-			"AWS Cloud Infrastructure Support",
-			"Amazon EKS Platform Operations",
-			"Karpenter Readiness Assessment",
+			"AWS EKS Administration",
+			"Kubernetes Workloads",
+			"Azure DevOps Pipelines",
+			"Jenkins CI/CD",
+			"HTTPS Remediation",
+			"ACM Integration",
+			"ALB Ingress Management",
+			"CloudWatch Monitoring",
+			"Production Deployments",
 			"Terraform & Terragrunt",
 			"Azure DevOps Pipelines",
 			"Prometheus & Grafana",
@@ -56,40 +62,33 @@ const experiences = [
 		],
 	},
 	{
-		company: "Techcamgateway",
+		company: "Computacenter India Pvt Ltd",
 		role: "AWS DevOps Engineer",
-		period: "Aug 2020 - Feb 2026",
+		period:  "Mar 2021 - Jan 2024",
 		highlights: [
-			"Terraform Automation",
+			"AWS Infrastructure",
+			"EC2",
+			"S3",
+			"RDS",
+			"Terraform",
+			"Ansible",
 			"Jenkins",
-			"GitHub Actions",
-			"Amazon EKS",
-			"DevSecOps",
-			"AWS Security",
-			"FinOps",
+			"Docker",
+			"Kubernetes",
+			"Cloud Migration"
 		],
 	},
 	{
-		company: "Deluxe Entertainment Services India Pvt. Ltd.",
-		role: "Cloud Support Operations Engineer",
-		period: "Apr 2019 - Jul 2020",
+		company: "Concentrix",
+		role: "Technical Support Associate",
+		period: "Dec 2018 - Jan 2020",
 		highlights: [
-			"AWS Cloud Operations",
-			"Incident Management",
-			"Monitoring",
-			"Linux Administration",
-		],
-	},
-	{
-		company: "YOU Broadband",
-		role: "Linux System Administrator",
-		period: "Feb 2016 - Aug 2018",
-		highlights: [
-			"Linux Administration",
-			"DNS",
-			"DHCP",
-			"SSH",
-			"Bash Scripting",
+		"Windows Support",
+		"Customer Support",
+		"OS Installation",
+		"Internet Connectivity",
+		"Printer Support",
+		"Customer Appreciation Award"
 		],
 	},
 ];
@@ -104,16 +103,16 @@ const projects = [
 		icon: "platform",
 	},
 	{
-		title: "Karpenter Readiness Assessment",
-		description: "Participated in Karpenter migration readiness activities by validating EKS clusters, IAM roles, OIDC configuration, IRSA dependencies, and platform compatibility requirements.",
-		technologies: ["Karpenter", "EKS", "IAM", "OIDC", "IRSA"],
-		icon: "assessment",
+		title: "HTTPS Remediation Program",
+		description: "Implemented HTTPS onboarding, SSL certificate integration, ACM migration, trust chain validation and secure ingress configuration.",
+		technologies: ["AWS ACM","ALB","Kubernetes","SSL/TLS"],
+		icon: "platform",
 	},
 	{
-		title: "Terraform & Terragrunt Infrastructure Automation",
-		description: "Supported Infrastructure as Code practices using Terraform and Terragrunt for AWS infrastructure provisioning, configuration management, and governance activities.",
-		technologies: ["Terraform", "Terragrunt", "AWS"],
-		icon: "infrastructure",
+		title: "AWS EKS Platform Operations",
+		description: "Managed production Kubernetes workloads running on Amazon EKS including deployments, ingress, secrets and troubleshooting.",
+		technologies: ["AWS","EKS","Helm","Kubernetes"],
+		icon: "assessment"
 	},
 	{
 		title: "CI/CD Platform Automation",
@@ -127,6 +126,12 @@ const projects = [
 		technologies: ["Prometheus", "Grafana", "Monitoring"],
 		icon: "observability",
 	},
+	{
+		title: "Infrastructure Automation",
+		description: "Provisioned AWS infrastructure using Terraform and Ansible following Infrastructure as Code practices.",
+		technologies: ["Terraform","Ansible","AWS"],
+		icon: "infrastructure"
+	},
 ] as const;
 
 const learningStages = [
@@ -136,20 +141,9 @@ const learningStages = [
 		statusDot: "bg-emerald-300",
 		statusBorder: "border-emerald-300/25",
 		iconSurface: "border-emerald-300/15 bg-emerald-300/[0.06] text-emerald-200",
-		certifications: ["Azure DevOps Fundamentals"],
+		certifications: [""AWS Certified Developer Associate""],
 	},
-	{
-		status: "In Progress",
-		statusText: "text-orange-200",
-		statusDot: "bg-orange-300",
-		statusBorder: "border-orange-300/25",
-		iconSurface: "border-orange-300/15 bg-orange-300/[0.06] text-orange-200",
-		certifications: [
-			"Certified Kubernetes Administrator (CKA)",
-			"Claude Certified Developer – Foundations",
-			"Agentic AI DevOps with Claude Code",
-		],
-	},
+	
 	{
 		status: "Planned",
 		statusText: "text-blue-200",
@@ -158,9 +152,8 @@ const learningStages = [
 		iconSurface: "border-blue-300/15 bg-blue-300/[0.06] text-blue-200",
 		certifications: [
 			"AWS Solutions Architect Associate",
-			"AWS Solutions Architect Professional",
-			"Terraform Associate",
-			"AWS Security Specialty",
+			"Certified Kubernetes Administrator (CKA)",
+			"Terraform Associate"
 		],
 	},
 ] as const;
