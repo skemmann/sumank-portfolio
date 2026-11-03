@@ -141,7 +141,7 @@ const learningStages = [
 		statusDot: "bg-emerald-300",
 		statusBorder: "border-emerald-300/25",
 		iconSurface: "border-emerald-300/15 bg-emerald-300/[0.06] text-emerald-200",
-		certifications: [""AWS Certified Developer Associate""],
+		certifications: ["AWS Certified Developer Associate"],
 	},
 	
 	{
