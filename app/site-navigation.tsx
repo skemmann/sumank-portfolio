@@ -77,14 +77,14 @@ export default function SiteNavigation() {
 					<a
 						href="#home"
 						onClick={(event) => navigateToSection(event, "home")}
-						aria-label="Gururaj Rathod home"
+						aria-label="Suman Kemmannakeri home"
 						className="group flex shrink-0 items-center gap-3"
 					>
 						<span className="grid size-10 place-items-center rounded-xl border border-white/10 bg-white/[0.05] font-mono text-sm font-bold tracking-wide text-orange-300 transition duration-300 group-hover:border-orange-300/40 group-hover:bg-orange-300/10">
-							GR
+							SK
 						</span>
 						<span className="hidden text-[10px] font-semibold tracking-[0.16em] text-slate-300 sm:block">
-							GURURAJ RATHOD
+							SUMAN KEMMANNAKERI
 						</span>
 					</a>
 

@@ -4,25 +4,25 @@ import SiteNavigation from "./site-navigation";
 
 export const metadata: Metadata = {
 	title: "Suman Kemmannakeri | AWS DevOps Engineer",
-	description:  "AWS DevOps Engineer with experience in AWS, Kubernetes, Terraform, Azure DevOps, CI/CD automation, cloud infrastructure and production support.",
+	description: "AWS DevOps Engineer with 5+ years of experience in cloud infrastructure, CI/CD automation, Kubernetes administration, infrastructure as code, and production support.",
 };
 
 const skillGroups = [
 	{
 		category: "Cloud",
-		skills: ["AWS","EKS","EC2","IAM","S3","Route53","ACM","CloudWatch","Secrets Manager","RDS"],
+		skills: ["AWS", "EKS", "EC2", "IAM", "S3", "Route53", "ACM", "CloudWatch", "Secrets Manager", "RDS"],
 	},
 	{
-		category: "Containers",
-		skills: ["Kubernetes", "Amazon EKS", "Helm", "NGINX", "IRSA", "OIDC"],
+		category: "Containers & Web Servers",
+		skills: ["Docker", "Kubernetes", "Amazon EKS", "Helm", "Apache Tomcat", "Apache HTTP Server"],
 	},
 	{
 		category: "Infrastructure as Code",
-		skills: ["Terraform", "Terragrunt", "Ansible"],
+		skills: ["Terraform", "Ansible"],
 	},
 	{
 		category: "CI/CD",
-		skills: ["Azure DevOps", "Azure Pipelines", "Jenkins", "Azure Repos", "Git"],
+		skills: ["Azure DevOps", "Azure Repos", "Azure Pipelines", "Jenkins", "Git"],
 	},
 	{
 		category: "Observability",
@@ -30,65 +30,52 @@ const skillGroups = [
 	},
 	{
 		category: "Operating Systems",
-		skills: ["Linux", "Bash", "Windows"],
-	},
-	{
-		category: "Security & DevSecOps",
-		skills: ["IAM", "KMS", "WAF", "SonarQube", "Container Security", "Image Scanning"],
+		skills: ["Linux (RHEL)", "Windows"],
 	},
 ];
 
 const experiences = [
 	{
-		company: "Capgemini Technology Services India Ltd.",
-		role: "AWS DevOps Engineer",
+		company: "Capgemini Technology Services India Ltd, Bangalore",
+		role: "DevOps Consultant",
 		period: "Feb 2025 - Present",
-		client: "HP Inc.",
 		highlights: [
-			"AWS EKS Administration",
-			"Kubernetes Workloads",
-			"Azure DevOps Pipelines",
-			"Jenkins CI/CD",
-			"HTTPS Remediation",
-			"ACM Integration",
-			"ALB Ingress Management",
-			"CloudWatch Monitoring",
-			"Production Deployments",
-			"Terraform & Terragrunt",
-			"Azure DevOps Pipelines",
-			"Prometheus & Grafana",
-			"IAM, OIDC & IRSA",
-			"NGINX Sidecar Implementation",
+			"Administer AWS EKS clusters and Kubernetes workloads across development, stage, and production environments.",
+			"Implement CI/CD pipelines using Azure DevOps, Jenkins, Git, and automated deployment workflows.",
+			"Manage Kubernetes Deployments, Services, Ingress Controllers, ConfigMaps, Secrets, Namespaces, and Helm releases.",
+			"Configure and support AWS services including EKS, EC2, IAM, ACM, Route53, CloudWatch, S3, and Secrets Manager.",
+			"Led HTTPS remediation initiatives involving SSL/TLS certificate onboarding, ACM integration, trust chain validation, and secure ingress configurations.",
+			"Managed Application Load Balancer (ALB) ingress routing and Kubernetes networking components.",
+			"Executed production deployments, release validations, rollback planning, and post-deployment verification.",
+			"Implemented monitoring and observability using Grafana and CloudWatch.",
+			"Conducted root cause analysis and resolved infrastructure, deployment, authentication, and platform-related issues.",
 		],
 	},
 	{
-		company: "Computacenter India Pvt Ltd",
-		role: "AWS DevOps Engineer",
-		period:  "Mar 2021 - Jan 2024",
+		company: "Computacenter India Pvt Ltd, Bangalore",
+		role: "AWS Cloud Engineer",
+		period: "Mar 2021 - Jan 2024",
 		highlights: [
-			"AWS Infrastructure",
-			"EC2",
-			"S3",
-			"RDS",
-			"Terraform",
-			"Ansible",
-			"Jenkins",
-			"Docker",
-			"Kubernetes",
-			"Cloud Migration"
+			"Designed and managed AWS infrastructure including EC2, S3, RDS, IAM, VPC, ELB, and Route53.",
+			"Provisioned cloud resources using Terraform and Infrastructure as Code practices.",
+			"Built and maintained Jenkins CI/CD pipelines integrated with Git and Maven.",
+			"Managed Docker containers and Kubernetes deployments for cloud-native applications.",
+			"Created CloudWatch dashboards, monitoring alerts, and operational reporting solutions.",
+			"Automated infrastructure provisioning and deployment activities using Ansible.",
+			"Supported migration of workloads from on-premises environments to AWS cloud platforms.",
+			"Collaborated with development teams on build, release, deployment, and infrastructure activities.",
 		],
 	},
 	{
-		company: "Concentrix",
+		company: "Concentrix, Bangalore",
 		role: "Technical Support Associate",
 		period: "Dec 2018 - Jan 2020",
 		highlights: [
-		"Windows Support",
-		"Customer Support",
-		"OS Installation",
-		"Internet Connectivity",
-		"Printer Support",
-		"Customer Appreciation Award"
+			"Resolved 85% of trouble tickets on the first call without escalations.",
+			"Achieved a customer satisfaction score of 4.3/5 and improved customer satisfaction by 25%.",
+			"Planned, supervised, and coordinated daily activities of junior associates.",
+			"Received the Customer Appreciation Award three times.",
+			"Supported Microsoft operating systems, installation, activation, printer, internet connectivity, and update issues.",
 		],
 	},
 ];
@@ -143,19 +130,6 @@ const learningStages = [
 		iconSurface: "border-emerald-300/15 bg-emerald-300/[0.06] text-emerald-200",
 		certifications: ["AWS Certified Developer Associate"],
 	},
-	
-	{
-		status: "Planned",
-		statusText: "text-blue-200",
-		statusDot: "bg-blue-300",
-		statusBorder: "border-blue-300/25",
-		iconSurface: "border-blue-300/15 bg-blue-300/[0.06] text-blue-200",
-		certifications: [
-			"AWS Solutions Architect Associate",
-			"Certified Kubernetes Administrator (CKA)",
-			"Terraform Associate"
-		],
-	},
 ] as const;
 
 type AiTopicIconName = "code" | "agents" | "prompt" | "development";
@@ -193,7 +167,7 @@ const aiTopics = [
 
 const careerStages = [
 	{
-		role: "Linux System Administrator",
+		role: "Technical Support Associate",
 		phase: "FOUNDATION",
 		marker: "border-slate-500 bg-[#111720]",
 		card: "border-white/10 hover:border-white/20",
@@ -201,7 +175,7 @@ const careerStages = [
 		phaseColor: "text-slate-500",
 	},
 	{
-		role: "Cloud Support Operations Engineer",
+		role: "AWS Cloud Engineer",
 		phase: "OPERATIONS",
 		marker: "border-slate-500 bg-[#111720]",
 		card: "border-white/10 hover:border-white/20",
@@ -209,7 +183,7 @@ const careerStages = [
 		phaseColor: "text-slate-500",
 	},
 	{
-		role: "AWS DevOps Engineer",
+		role: "DevOps Consultant",
 		phase: "CURRENT",
 		marker: "border-orange-100 bg-orange-400 shadow-[0_0_16px_rgba(251,146,60,0.65)]",
 		card: "border-orange-300/30 bg-orange-300/[0.07] hover:border-orange-200/50",
@@ -332,7 +306,7 @@ export default function Home() {
 						</div>
 
 						<h1 className="text-[clamp(3rem,5.8vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-white sm:whitespace-nowrap">
-							Gururaj <span className="bg-gradient-to-r from-orange-300 via-orange-200 to-amber-100 bg-clip-text text-transparent">Rathod</span>
+							Suman <span className="bg-gradient-to-r from-orange-300 via-orange-200 to-amber-100 bg-clip-text text-transparent">Kemmannakeri</span>
 						</h1>
 						<h2 className="mt-5 text-xl font-semibold leading-snug text-orange-200 sm:text-2xl">
 							AWS DevOps Engineer
@@ -343,11 +317,11 @@ export default function Home() {
 
 						<dl className="mt-6 grid max-w-xl grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
 							<div className="rounded-xl border border-white/10 bg-white/[0.045] p-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-orange-300/25 sm:p-4">
-								<dt className="text-lg font-semibold leading-none text-orange-300 sm:text-xl">10+</dt>
+									<dt className="text-lg font-semibold leading-none text-orange-300 sm:text-xl">5+</dt>
 								<dd className="mt-2 text-[10px] leading-4 text-slate-400 sm:text-xs">Years Experience</dd>
 							</div>
 							<div className="rounded-xl border border-white/10 bg-white/[0.045] p-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-blue-300/25 sm:p-4">
-								<dt className="text-lg font-semibold leading-none text-blue-300 sm:text-xl">4+</dt>
+								<dt className="text-lg font-semibold leading-none text-blue-300 sm:text-xl">5+</dt>
 								<dd className="mt-2 text-[10px] leading-4 text-slate-400 sm:text-xs">Years DevOps</dd>
 							</div>
 							<div className="rounded-xl border border-white/10 bg-white/[0.045] p-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-violet-300/25 sm:p-4">
@@ -370,8 +344,7 @@ export default function Home() {
 
 						<div className="mt-9 flex flex-wrap items-center gap-3">
 							<a
-								href="/resume/GURURAJ-RATHOD-RESUME.pdf"
-								download
+								href="/resume/Suman_DevOps_5years.pdf"
 								target="_blank"
 								rel="noreferrer"
 								className="group inline-flex min-h-12 items-center justify-center gap-2.5 rounded-xl bg-orange-400 px-5 text-sm font-semibold text-[#17100a] shadow-[0_8px_30px_rgba(249,115,22,0.16)] transition duration-300 hover:-translate-y-0.5 hover:bg-orange-300 hover:shadow-[0_12px_34px_rgba(249,115,22,0.28)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-300"
@@ -417,8 +390,8 @@ export default function Home() {
 						<div className="relative size-[min(74vw,280px)] rounded-full border-[3px] border-orange-400 p-1 shadow-[0_0_0_8px_rgba(249,115,22,0.08),0_20px_70px_rgba(249,115,22,0.18)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_0_0_10px_rgba(249,115,22,0.1),0_24px_80px_rgba(249,115,22,0.26)]">
 							<div className="relative size-full overflow-hidden rounded-full bg-[#171c26]">
 								<Image
-									src="/profile.jpg"
-									alt="Gururaj Rathod"
+									src="/profile.png"
+									alt="Suman Kemmannakeri"
 									fill
 									sizes="(max-width: 640px) 74vw, 280px"
 									priority
@@ -455,13 +428,10 @@ export default function Home() {
 							<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">About Me</h2>
 							<div className="mt-6 space-y-4 text-sm leading-7 text-slate-400 sm:text-base">
 								<p>
-									AWS DevOps Engineer with 10+ years of IT experience and 4+ years in DevOps, specializing in AWS Cloud, Kubernetes (EKS), Terraform, CI/CD automation, observability, and cloud security.
+											AWS DevOps Engineer with 5+ years of experience in cloud infrastructure, CI/CD automation, Kubernetes administration, Infrastructure as Code, and production support. Skilled in AWS, Azure DevOps, Kubernetes, Docker, Terraform, Helm, Jenkins, Ansible, and Linux. Experienced in managing cloud-native applications, automating deployments, supporting cloud migration initiatives, implementing HTTPS remediation, and maintaining highly available enterprise platforms.
 								</p>
 								<p>
-									Currently supporting HP Inc.&apos;s cloud-native platform ecosystem through AWS infrastructure operations, EKS platform support, automation, monitoring, and DevOps engineering.
-								</p>
-								<p>
-									Passionate about Platform Engineering, Infrastructure as Code, Cloud Architecture, and building scalable cloud-native solutions.
+										Based in Bangalore, Karnataka.
 								</p>
 							</div>
 						</div>
@@ -528,7 +498,7 @@ export default function Home() {
 							<p className="mb-4 text-[11px] font-semibold tracking-[0.18em] text-orange-200">CAREER PATH</p>
 							<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Professional Experience</h2>
 							<p className="mt-4 text-sm leading-7 text-slate-400 sm:text-base">
-								My journey from Linux Administration to AWS DevOps Engineering, Platform Operations, and Cloud Architecture.
+								Experience across technical support, AWS cloud engineering, and DevOps consulting.
 							</p>
 						</div>
 
@@ -548,16 +518,11 @@ export default function Home() {
 													{experience.period}
 												</p>
 											</div>
-											{experience.client && (
-												<p className="mt-4 text-xs text-slate-400">
-													<span className="mr-2 font-semibold tracking-[0.14em] text-slate-500">CLIENT</span>
-													{experience.client}
-												</p>
-											)}
-											<ul className="mt-5 flex flex-wrap gap-2 border-t border-white/[0.08] pt-4">
+											<ul className="mt-5 grid gap-2 border-t border-white/[0.08] pt-4">
 												{experience.highlights.map((highlight) => (
-													<li key={highlight} className="rounded-lg border border-white/[0.09] bg-[#080b10]/45 px-2.5 py-1.5 text-xs text-slate-300">
-														{highlight}
+													<li key={`${experience.company}-${highlight}`} className="flex items-start gap-2 text-sm leading-6 text-slate-300">
+														<span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-orange-300" />
+														<span>{highlight}</span>
 													</li>
 												))}
 											</ul>
@@ -609,7 +574,7 @@ export default function Home() {
 					<div className="relative">
 						<div className="mb-10 max-w-3xl">
 							<p className="mb-4 text-[11px] font-semibold tracking-[0.18em] text-orange-200">GROWTH &amp; DEVELOPMENT</p>
-							<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Certifications &amp; Learning Journey</h2>
+							<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Certification</h2>
 							<p className="mt-4 text-sm leading-7 text-slate-400 sm:text-base">
 								Continuous learning and professional development focused on Cloud, DevOps, Kubernetes, Platform Engineering, and AI-assisted engineering.
 							</p>
@@ -709,6 +674,15 @@ export default function Home() {
 					</div>
 				</section>
 
+				<section id="education" className="relative border-t border-white/[0.08] py-16 md:py-20 lg:py-24">
+					<div className="relative max-w-3xl">
+						<p className="mb-4 text-[11px] font-semibold tracking-[0.18em] text-orange-200">EDUCATION</p>
+						<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Bachelor of Engineering (Computer Science &amp; Engineering)</h2>
+						<p className="mt-4 text-base font-medium text-slate-200">UBDT College of Engineering, Davangere</p>
+						<p className="mt-2 text-sm text-slate-400">2014 - 2018</p>
+					</div>
+				</section>
+
 				<section id="contact" className="relative border-t border-white/[0.08] py-16 md:py-20 lg:py-24">
 					<div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_14%_35%,rgba(249,115,22,0.09),transparent_38%),radial-gradient(ellipse_at_88%_72%,rgba(59,130,246,0.07),transparent_38%)]" />
 					<div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.045] p-6 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:p-8 lg:p-10">
@@ -729,18 +703,18 @@ export default function Home() {
 								<div className="min-w-0 border-t border-white/[0.1] pt-4">
 									<dt className="text-[10px] font-semibold tracking-[0.16em] text-slate-500">EMAIL</dt>
 									<dd className="mt-2 break-all text-sm font-medium text-slate-200">
-										<a className="transition-colors hover:text-orange-200" href="mailto:gururajratho90@gmail.com">gururajratho90@gmail.com</a>
+															<a className="transition-colors hover:text-orange-200" href="mailto:sumankemmannakeri1096@gmail.com">sumankemmannakeri1096@gmail.com</a>
 									</dd>
 								</div>
 								<div className="min-w-0 border-t border-white/[0.1] pt-4">
 									<dt className="text-[10px] font-semibold tracking-[0.16em] text-slate-500">PHONE</dt>
 									<dd className="mt-2 text-sm font-medium text-slate-200">
-										<a className="transition-colors hover:text-orange-200" href="tel:+918660767009">+91 8660767009</a>
+										<a className="transition-colors hover:text-orange-200" href="tel:+917975161997">+91 7975161997</a>
 									</dd>
 								</div>
 								<div className="min-w-0 border-t border-white/[0.1] pt-4">
 									<dt className="text-[10px] font-semibold tracking-[0.16em] text-slate-500">LOCATION</dt>
-									<dd className="mt-2 text-sm font-medium text-slate-200">Bangalore, India</dd>
+										<dd className="mt-2 text-sm font-medium text-slate-200">Bangalore, Karnataka</dd>
 								</div>
 							</dl>
 
@@ -766,7 +740,7 @@ export default function Home() {
 							</div>
 
 							<a
-								href="mailto:gururajratho90@gmail.com"
+								href="mailto:sumankemmannakeri1096@gmail.com"
 								className="mt-8 inline-flex min-h-14 w-full items-center justify-center gap-2.5 rounded-xl bg-orange-400 px-6 text-sm font-semibold text-[#17100a] shadow-[0_8px_30px_rgba(249,115,22,0.16)] transition duration-300 hover:-translate-y-0.5 hover:bg-orange-300 hover:shadow-[0_12px_34px_rgba(249,115,22,0.28)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-300 sm:w-fit"
 							>
 								<MailIcon />
@@ -778,7 +752,7 @@ export default function Home() {
 
 				<footer className="border-t border-white/[0.08] py-6 text-center">
 					<div className="flex flex-col items-center gap-2">
-						<p className="text-[11px] font-semibold text-slate-400">© 2026 Gururaj Rathod</p>
+						<p className="text-[11px] font-semibold text-slate-400">© 2026 Suman Kemmannakeri</p>
 						<p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs font-medium text-slate-300">
 							<span>AWS DevOps Engineer</span>
 							<span aria-hidden="true" className="text-orange-300">|</span>
